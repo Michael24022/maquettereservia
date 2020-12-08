@@ -1,3 +1,37 @@
-li {
+#reservia 
+{
+    margin: 20px;
+    padding: 10px
+}
+
+nav ul
+{
     list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 40px;
+}
+
+nav
+{
+    position: absolute;
+    top: 0px; 
+    right: 20px;
+    
+}
+
+#entête
+{
+    margin-right: 10px;
+    padding: 0px
+
+}
+
+footer
+{
+    display: flex;
+    background-color:rgb(242,242,242);
 }

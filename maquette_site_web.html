@@ -2,81 +2,115 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="maquette_site_web.css" />
-        <title>Reservia</title>
+            <link rel="stylesheet" href="maquette_site_web.css" />
+            <title>Reservia</title>
+            <script src="https://kit.fontawesome.com/d5aca030c9.js" crossorigin="anonymous"></script>
     </head>
-        <div id="reservia"> <!--logo site Reservia-->
-            <img 
+
+    <body>
+        <header id="header">
+            <!--Logo site Reservia-->
+            <img class="header"   
             src="projet2_reservia/images/logo/Reservia@3x.png" 
             alt="logo Reservia"
-            height="30px"
+            height="42px"
             />
-        </div>  
-
-        <div id="entête"></div>
-            <p>
-                <strong>Trouvez votre hébergement pour des vacances de rêve</strong><br>
-                        En plein centre ville ou en pleine nature
-            </p>
         
-        <div id="navigation">
-            <nav>
-                <ul>
-                    <li>Hébergements</a></li>
-                    <li>Activités</a></li>
-                    <li>S'inscrire</a></li>
-                </ul>
-            </nav>
-            </div>
+            <!--Titre-->
+         <div id="texte1"> 
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2> 
+            <p>En plein centre ville ou en pleine nature</p>
+         </div>
 
+            <!--Champ de recherche--> 
+            <i class="fas fa-map-marker-alt"></i>
 
-               <!-- Section 1, les 3 hotels les plus populaires -->
-                <section id="populaire">
+            <form method="post">
+            <input type="text" id="name" name="name" required
+            placeholder="Marseille, France"
+            size="30">
+            </form>
+
+            <i class="searchFormSubmitinputIcon fas fa-search"></i>
                 
-                </section>
+            <!--Icones Fontawesome-->
+            <h3>Filtres</h3>
+        
+            <div id="img-1">
+                <i class="fas fa-circle"></i>   
+                <i class="fas fa-money-bill-wave"></i>
+            </div>     
 
 
+             
 
-               <!-- Section 2 liste hébergements Marseille -->
-                <section id="hébergements">
-
-
-                </section>
             
+        
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-dog"></i>
+        
+      
 
-               <!-- Section 3 les activités à Marseille -->
-                <section id="activités" >
+            <i class="fas fa-chart-line"></i>
+                
+            <i class="fas fa-info"></i>
+
+            <i class="fas fa-star"></i>
+
+            <i class="fas fa-child"></i>
+
+            <!--Onglets de navigation-->
+        <nav id="navigation">
+            <ul>
+                <li><a href="#hébergements">Hébergements</a></li>
+                <li><a href="#activités">Activités</a></li>
+                <li>S'inscrire</li>
+            </ul>
+        </nav>
+        </header>
+        
+        
 
 
-                </section>
 
 
+            <!--footer-->   
+            <footer id="footer">                            <!-- utiliser des div class pour grouper les choses ensemble-->
 
-
-
-
-            <footer>
-                <div id="a_propos">
+            <div class="contenu">
+                <div class="liens">             <!--AJOUTER UNE MARGIN-AUTO EN CSS POUR UN ALIGNEMENT AUTOMATIQUE--> 
                     <strong>A propos</strong>
-                        <p>Fonctionnement du site</p>
-                        <p>Conditions générales de vente</p>
-                        <p>Données et confidentialité</p>
-                    </div>
+                        <ul>
+                            <li><a href="Fonctionnement_du_site">Foncitonnement du site</a></li>
+                            <li><a href="CGV">Conditions générales de vente</a></li>
+                            <li><a href="Données_et_confidentialité">Données et confidentialité</a></li>
+                        </ul>
+                </div>    
 
-                <div id="nos_hébergements">
+                <div class="liens">
                     <strong>Nos hébergements</strong>
-                        <p>Charte qualité</p>
-                        <p>Soumettre votre hôtel</p>
+                        <ul>
+                            <li><a href="Charte_qualité">Charte qualité</a></li>
+                            <li><a href="Soumettre_votre_hôtel">Soumettre votre hôtel</a></li>
+                        </ul>
                 </div>
-                <div id="assistance">
+                
+                <div class="liens">
                     <strong>Assistance</strong>
-                        <p>Centre d'aide</p>
-                        <p>Nous contacter</p>
-                        
+                        <ul>
+                            <li><a href="Centre d'aide">Centre d'aide</a></li>
+                            <li><a href="Nous_contacter">Nous contacter</a></li>
+                        </ul>
                 </div>
+            </div>
 
         
             </footer>
         </div>
     </body>
 </html>
+
+
+
+
+
